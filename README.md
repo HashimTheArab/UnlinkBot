@@ -12,3 +12,4 @@
      ```
     
 If you're confused on what this is for then you don't need it.
+This was my first python project.
