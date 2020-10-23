@@ -11,5 +11,5 @@
      py Bot.py
      ```
     
-If you're confused on what this is for then you don't need it.
-This was my first python project.
+If you're confused on what this is for then you don't need it.\n
+# This is my first python project.
