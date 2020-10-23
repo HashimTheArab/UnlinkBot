@@ -7,8 +7,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import NoSuchElementException
 import time
 
-legend5 = 'Legit_Legend5_yt@outlook.com'
-legend5pass = 'Adelanreade551'
+email = input('Input the account email.\n')
+password = input('Input the account password\n')
 
 geckopath = "./geckodriver.exe"
 
@@ -19,13 +19,13 @@ print('Opening Microsoft.')
 try:
     try:
         browser.get('https://account.microsoft.com/devices/content')
-        browser.find_element_by_name('loginfmt').send_keys(legend5)
+        browser.find_element_by_name('loginfmt').send_keys(email)
         browser.find_element_by_id('idSIButton9').click()
         print('Email succeeded.')
     except:
         print('Email failed.')
     try:
-        browser.find_element_by_id('i0118').send_keys(legend5pass)
+        browser.find_element_by_id('i0118').send_keys(password)
         browser.find_element_by_id('idSIButton9').click()
         print('Password succeeded!')
     except:
@@ -52,7 +52,6 @@ try:
         else:
             print('Finished unlinking devices')
     else:
-        print('fuck u')
+        print('You have to be signed in and on the unlink screen idiot')
 except:
     print(f"An error has occured. Attempt {i}")
-
